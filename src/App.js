@@ -9,8 +9,11 @@ class App extends React.Component{
     number: 48
   };
   }
-  clickChange= ()=>{
-    this.setState({number : this.state.number + 1})
+  clickChange = ()=>{
+    this.setState((prvState,prvProp)=>{
+      return { number : prvState.number + 1}
+    
+    })
   }
   render(){
      return (
