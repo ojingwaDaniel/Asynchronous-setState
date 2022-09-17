@@ -3,15 +3,14 @@ import logo from "./logo.svg";
 import "./App.css";
 
 class App extends React.Component{
-  constructor(props){
-    super(props)
-    this.state = {
-    number: 48 + this.props.increment
+  
+    state = {
+    number: 48 
   };
-  }
+  
   clickChange = ()=>{
     this.setState((prvState,prvProp)=>{
-      return { number : prvState.number + prvProp.increment}
+      return { number : prvState.number + prvProp.increment }
     
     })
   }
