@@ -11,7 +11,7 @@ class App extends React.Component{
   }
   clickChange = ()=>{
     this.setState((prvState,prvProp)=>{
-      return { number : prvState.number + 1}
+      return { number : prvState.number + prvProp.increment}
     
     })
   }
